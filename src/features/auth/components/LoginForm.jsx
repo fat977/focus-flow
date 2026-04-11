@@ -33,6 +33,7 @@ function LoginForm() {
               name="email"
               register={register}
               error={errors.email?.message}
+              className="mb-4"
             />
 
             <Input
@@ -41,6 +42,7 @@ function LoginForm() {
               register={register}
               placeholder="Password"
               error={errors.password?.message}
+              className="mb-4"
             />
 
             {serverError && (
@@ -51,7 +53,12 @@ function LoginForm() {
 
             {/* Login Button */}
             <div className="py-2">
-              <Button className="justify-center " fullWidth type="submit" isPending={isPending}>
+              <Button
+                className="justify-center "
+                fullWidth
+                type="submit"
+                isPending={isPending}
+              >
                 Login
               </Button>
             </div>
@@ -68,7 +75,7 @@ function LoginForm() {
           </form>
 
           {/* Social Auth */}
-            <SocialAuthBtns />
+          <SocialAuthBtns />
 
           {/* Footer */}
           <Link
