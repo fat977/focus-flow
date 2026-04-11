@@ -1,0 +1,84 @@
+.react-calendar {
+  border: none;
+  font-family: "Inter", sans-serif;
+  background-color: var(--grey-50);
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+   background: transparent;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background-color: var(--brand-700);
+  color: var(--grey-0);
+  font-weight: bold;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.react-calendar__navigation button {
+  color: var(--grey-100);
+  min-width: 44px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  font-weight: 600;
+  color: var(--grey-700);
+  background-color: var(--grey-100);
+}
+
+.react-calendar__tile {
+  max-height: 5rem;
+   padding: 0.5rem 0.25rem; 
+  
+
+  text-align: center;
+  border-radius: 0.5rem;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.react-calendar__tile--now {
+  background: var(--grey-300);
+  font-weight: bold;
+  color: var(--grey-700);
+}
+
+.react-calendar__tile--active {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  border-radius: 12px;
+}
+
+/* .react-calendar__tile--active {
+  background: var(--grey-200) !important;
+  color: var(--grey-500);
+  border-radius: 0.5rem;
+} */
+
+.react-calendar__tile:hover {
+   background: rgba(255,255,255,0.05) !important;
+  border-radius: 10px;
+  /* background: var(--brand-500) !important; */
+  cursor: pointer;
+}
+
+.task-badge {
+  font-size: 0.65rem;
+  padding: 1px 4px;
+  border-radius: 0.25rem;
+  color: var(--grey-0);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.task-indicator {
+  width: 6px;
+  border-radius: 4px;
+}

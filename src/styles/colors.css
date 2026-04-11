@@ -1,0 +1,99 @@
+/* =====================
+    Light Mode (Soft Slate Theme)
+===================== */
+.light-mode {
+  /* Slate Grey */
+  --grey-0: #ffffff;
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+
+  /* Brand */
+  --brand-50: #f0fdfa;
+  --brand-100: #ccfbf1;
+  --brand-500: #0d9488; /* Teal */
+  --brand-600: #0f766e;
+  --brand-700: #115e59;
+
+  --backdrop: rgba(146, 156, 180, 0.189);
+
+  /* Status */
+  --success-50: #ecfdf5;
+  --success-100: #d0fae5;
+  --success-600: #009966;
+
+  --warning-50: #fffbeb;
+  --warning-100: #fef3c6;
+  --warning-600: #e17100;
+
+  --danger-50: #fef2f2;
+  --danger-100: #ffe2e2;
+  --danger-600: #e7000b;
+  --danger-hover: #d17777;
+
+  /* UI Extras */
+  --backdrop: rgba(58, 53, 53, 0.7);
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+
+  --text-main: var(--grey-800);
+  --text-muted: var(--grey-500);
+  --text-on-buttons: #ffffff;
+  --github-color: #1e293b;
+  --github-hover: #0f172a;
+}
+
+/* =====================
+    Dark Mode (Deep Ocean Theme)
+===================== */
+.dark-mode {
+  /* Navy Deep */
+  --grey-0: #1e293b;
+  --grey-50: #0f172a;
+  --grey-100: #334155;
+  --grey-200: #475569;
+  --grey-300: #64748b;
+  --grey-400: #94a3b8;
+  --grey-500: #cbd5e1;
+  --grey-600: #e2e8f0;
+  --grey-700: #f1f5f9;
+  --grey-800: #f8fafc;
+  --grey-900: #ffffff;
+
+  /* Brand */
+  --brand-50: #042f2e; 
+  --brand-100: #134e4a; 
+  --brand-500: #2dd4bf;
+  --brand-600: #5eead4;
+  --brand-700: #99f6e4; 
+  --backdrop: rgba(10, 13, 20, 0.8);
+
+  /*  Status */
+  --success-50: #064e3b; 
+  --success-100: #065f46; 
+  --success-600: #34d399; 
+
+  /* Warning - Dark Mode */
+  --warning-50: #451a03; 
+  --warning-100: #78350f; 
+  --warning-600: #fbbf24; 
+
+  /* Danger - Dark Mode */
+  --danger-50: #450a0a; 
+  --danger-100: #7f1d1d;
+  --danger-600: #f87171; 
+  --danger-hover: #ef4444;
+
+  --text-main: var(--grey-600);
+  --text-muted: var(--grey-400);
+  --text-on-buttons: #ffffff;
+
+  --github-color: #0f172a;
+  --github-hover: #0f172a;
+}
