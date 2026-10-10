@@ -56,7 +56,7 @@ export default function BoardDetails() {
     );
   }
   return (
-    <div className="flex flex-col h-full overflow-hidden ">
+    <div className="flex flex-col h-full min-h-0 overflow-hidden">
       <div className="shrink-0 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6 backdrop-blur-md   px-4 py-3">
         <h1 className="text-xl sm:text-3xl font-bold text-(--text-main) truncate">
           {board?.title}

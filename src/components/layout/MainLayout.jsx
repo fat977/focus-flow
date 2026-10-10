@@ -12,9 +12,9 @@ function MainLayout() {
     <div className="flex h-screen text-(--grey-900)">
       <Toaster position="top-right" />
       <Sidebar />
-      <div className="flex flex-col flex-1 overflow-hidden">
+      <div className="flex flex-col flex-1 min-h-0 overflow-hidden">
         <Header />
-        <main className="sidebar-scrollbar flex-1 overflow-y-auto p-4 bg-(--grey-0) text-(--text-main)">
+        <main className="sidebar-scrollbar flex-1 min-h-0 overflow-y-auto p-4 bg-(--grey-0) text-(--text-main)">
           <Outlet />
         </main>
         <Modal />
