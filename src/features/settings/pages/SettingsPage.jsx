@@ -17,9 +17,9 @@ export default function Settings() {
   const [language, setLanguage] = useState("en");
   const [weekStart, setWeekStart] = useState("sunday");
   return (
-    <div className=" space-y-8">
+    <div className="space-y-8 text-(--text-main)">
       {/* Page title */}
-      <h1 className="text-2xl font-semibold">Settings</h1>
+      <h1 className="text-2xl font-semibold text-(--text-main)">Settings</h1>
 
       <Section title="General">
         <SettingsDropdown
@@ -108,8 +108,8 @@ export default function Settings() {
 
 function Section({ title, children }) {
   return (
-    <section className="rounded-xl  border border-white/5 p-6 space-y-4">
-      <h2 className="text-lg font-medium ">{title}</h2>
+    <section className="rounded-xl border border-(--grey-200) bg-(--grey-50) p-6 space-y-4">
+      <h2 className="text-lg font-medium text-(--text-main)">{title}</h2>
       {children}
     </section>
   );
@@ -118,14 +118,14 @@ function Section({ title, children }) {
 function SelectItem({ icon: Icon, label, value }) {
   return (
     <div className="flex items-center justify-between">
-      <div className="flex items-center gap-3 ">
+      <div className="flex items-center gap-3 text-(--text-main)">
         <Icon size={18} />
         {label}
       </div>
 
       <Button variant="secondary">
         {value}
-        <span className="text-gray-500">▼</span>
+        <span className="text-(--text-muted)">▼</span>
       </Button>
     </div>
   );
@@ -134,12 +134,12 @@ function SelectItem({ icon: Icon, label, value }) {
 function ToggleItem({ icon: Icon, label }) {
   return (
     <div className="flex items-center justify-between">
-      <div className="flex items-center gap-3 ">
+      <div className="flex items-center gap-3 text-(--text-main)">
         <Icon size={18} />
         {label}
       </div>
 
-      <Input type="checkbox" className="h-5 w-5 accent-teal-500" />
+      <Input type="checkbox" className="h-5 w-5 accent-(--brand-500)" />
     </div>
   );
 }

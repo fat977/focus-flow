@@ -26,20 +26,15 @@ export default function SettingsDropdown({
   const selectedOption = options.find((o) => o.value === value);
 
   return (
-    <div className="flex items-center justify-between w-full ">
-
-      <div className="flex items-center gap-3 ">
-        {icon}
-        <label className="text-sm  font-medium">{label}</label>
+    <div className="flex items-center justify-between w-full">
+      <div className="flex items-center gap-3">
+        <span className="text-(--text-main)">{icon}</span>
+        <label className="text-sm font-medium text-(--text-main)">{label}</label>
       </div>
 
       <div className="relative" ref={ref}>
-        <Button
-        variant="secondary"
-          onClick={() => setOpen(!open)}
-         
-        >
-          <span>{selectedOption?.label || "Select..."}</span>
+        <Button variant="secondary" onClick={() => setOpen(!open)}>
+          <span className="text-(--text-main)">{selectedOption?.label || "Select..."}</span>
           <ChevronDown
             size={18}
             className={`transition-transform duration-200 ${
@@ -49,30 +44,25 @@ export default function SettingsDropdown({
         </Button>
 
         {open && (
-          <div
-            className="absolute top-full right-0 mt-2 w-full min-w-40 
-                       rounded-xl bg-zinc-900 border border-zinc-700
-                       shadow-2xl overflow-hidden z-100"
-          >
+          <div className="absolute top-full right-0 mt-2 w-full min-w-40 rounded-xl bg-(--grey-0) border border-(--grey-200) shadow-2xl overflow-hidden z-100">
             <div className="py-1">
               {options.map((option) => (
-                <Button
-                variant="secondary"
+                <button
+                  type="button"
                   key={option.value}
                   onClick={() => {
                     onChange(option.value);
                     setOpen(false);
                   }}
-                  className={`w-full text-left px-4 py-2.5 text-sm
-                    hover:bg-zinc-800 transition
+                  className={`w-full text-left px-4 py-2.5 text-sm transition
                     ${
                       option.value === value
-                        ? "bg-zinc-800 text-blue-400 font-semibold"
-                        : "text-gray-300"
+                        ? "bg-(--grey-100) text-(--brand-600) font-semibold"
+                        : "text-(--text-main) hover:bg-(--grey-100)"
                     }`}
                 >
                   {option.label}
-                </Button>
+                </button>
               ))}
             </div>
           </div>
